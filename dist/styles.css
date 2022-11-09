@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 50px;
+}
+header img {
+  width: 120px;
+}
+header ul {
+  display: flex;
+  margin-left: 400px;
+}
+header ul li {
+  margin-left: 100px;
+  list-style: none;
+}
+header button {
+  background: linear-gradient(to bottom right, #FFFFFF, #6C63FE);
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.first_page {
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+.first_page .main__bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(#19164B, #19191B);
+  overflow: hidden;
+}
+.first_page .main__bg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  opacity: 0.4;
+}
+.first_page .main__h1 {
+  width: 100%;
+  padding: 0 150px;
+}
+.first_page .main__h1 h1 {
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 109%;
+  text-align: center;
+  letter-spacing: 0.015em;
+  background: radial-gradient(145.77% 145.77% at 50% 100%, #7D76E7 0%, #D9D8E4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.first_page ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.first_page ul li {
+  list-style: none;
+  margin-left: 25px;
+}
+.first_page ul li img {
+  width: 50px;
+}
+
+.second_page {
+  text-align: center;
+  position: absolute;
+  top: 778px;
+  width: 100vw;
+}
+.second_page .main__bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(#19164B, #19191B);
+  overflow: hidden;
+}
+.second_page .main__bg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  opacity: 0.4;
+}
+.second_page h2 {
+  margin-top: 100px;
+}
+.second_page .main_goal {
+  padding: 36px 540px;
+  line-height: px;
+  margin-bottom: 80px;
+}
+.second_page .main_goal p {
+  font-weight: 300;
+}
+.second_page .goal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  padding: 0 100px;
+}/*# sourceMappingURL=styles.css.map */
