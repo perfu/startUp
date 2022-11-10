@@ -35,7 +35,7 @@ header ul li {
   list-style: none;
 }
 header button {
-  background: linear-gradient(to bottom right, #FFFFFF, #6C63FE);
+  background: radial-gradient(145.77% 145.77% at 50% 100%, #7D76E7 0%, #D9D8E4 100%);
   padding: 6px 10px;
   border-radius: 10px;
   border: none;
@@ -53,7 +53,6 @@ header button {
 .first_page .main__bg {
   position: absolute;
   width: 100%;
-  height: 100vh;
   z-index: -1;
   background: linear-gradient(#19164B, #19191B);
   overflow: hidden;
@@ -71,7 +70,7 @@ header button {
 .first_page .main__h1 h1 {
   font-weight: 500;
   font-size: 68px;
-  line-height: 109%;
+  line-height: 130%;
   text-align: center;
   letter-spacing: 0.015em;
   background: radial-gradient(145.77% 145.77% at 50% 100%, #7D76E7 0%, #D9D8E4 100%);
@@ -119,7 +118,7 @@ header button {
 }
 .second_page .main_goal {
   padding: 36px 540px;
-  line-height: px;
+  line-height: 40px;
   margin-bottom: 80px;
 }
 .second_page .main_goal p {
@@ -157,44 +156,98 @@ header button {
 .third_page h2 {
   margin-top: 100px;
   margin-bottom: 100px;
+  font-weight: 400;
 }
 .third_page .members_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 0 100px;
-  margin-bottom: 100px;
+  gap: 80px 150px;
+  padding: 0 150px;
+  margin-bottom: 200px;
 }
 .third_page .members_grid .m1, .third_page .members_grid .m2, .third_page .members_grid .m3, .third_page .members_grid .m4 {
   text-align: start;
-  background-color: #C7C5EB;
+  background-color: rgba(199, 197, 235, 0.4);
   padding: 10px 80px 50px;
   border: none;
   border-radius: 10px;
-  opacity: 0.4;
-}
-.third_page .members_grid p .m1 {
   color: white;
+}
+.third_page hr {
+  border: 1px solid white;
+  margin: 0 50px;
 }
 .third_page .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 50px 0;
 }
 .third_page .content img {
   width: 120px;
 }
-.third_page .content ul {
-  margin-left: 800px;
+.third_page .content .f1 {
+  grid-area: h1;
+  justify-self: center;
+  padding-left: 45px;
+  padding-bottom: 10px;
+  font-weight: 500;
 }
-.third_page .content ul li {
-  list-style: none;
+.third_page .content .f2 {
+  grid-area: i1;
+  justify-self: end;
+  margin-right: 15px;
 }
-.third_page .content ul li img {
+.third_page .content .f3 {
+  grid-area: p1;
+  justify-self: center;
+}
+.third_page .content .f4 {
+  grid-area: i2;
+  justify-self: end;
+  margin-right: 15px;
+}
+.third_page .content .f5 {
+  grid-area: p2;
+  justify-self: center;
+}
+.third_page .content .follow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "h1 h1" "i1 p1" "i2 p2";
+  margin-left: 700px;
+}
+.third_page .content .follow img {
   width: 20px;
 }
-.third_page .content ul li span {
-  padding: 16px;
+.third_page .content .follow p {
+  margin: 0;
+}
+.third_page .content .contacts .c1 {
+  font-weight: 500;
+}
+.third_page .content .contacts .c2, .third_page .content .contacts .c3 {
+  font-weight: 300;
+  text-align: start;
+}
+.third_page .content .input {
+  display: flex;
+}
+.third_page .content .input input {
+  padding: 8px 10px;
+  letter-spacing: 4px;
+  color: #484848;
+  border: 0;
+}
+.third_page .content .input button {
+  background-color: #6C63FE;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */
